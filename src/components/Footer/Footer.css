@@ -1,0 +1,193 @@
+/* Footer.css */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+.footer-section h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #333;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+  color: #6C0002;
+}
+
+.footer .social-icons a {
+  font-size: 20px;
+  margin: 0 8px;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+  color: #bc6466;
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+}
+
+.footer-bottom span {
+  color: #FED10B;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-bottom span:hover {
+  color: #be8f90;
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Stack sections vertically on mobile */
+      align-items: center;
+  }
+
+  .footer-section {
+      min-width: 100%; /* Sections take full width */
+      text-align: center; /* Center-align text */
+      margin-bottom: 20px; /* Add spacing between sections */
+  }
+
+  .footer-section h3 {
+      font-size: 20px; /* Smaller heading font size */
+  }
+
+  .footer-section h4 {
+      font-size: 16px; /* Smaller subheading font size */
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+      font-size: 12px; /* Smaller font size for better mobile readability */
+  }
+
+  .footer .social-icons a {
+      font-size: 18px; /* Smaller icon size */
+  }
+
+  .footer-bottom {
+      font-size: 12px; /* Smaller text for footer bottom */
+  }
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .footer-container {
+      flex-direction: row; /* Keep sections in row on tablets */
+      justify-content: space-between;
+  }
+
+  .footer-section {
+      min-width: 45%; /* Each section takes 45% width */
+  }
+
+  .footer-section h3 {
+      font-size: 22px; /* Slightly smaller heading */
+  }
+
+  .footer-section h4 {
+      font-size: 17px; /* Slightly smaller subheading */
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+      font-size: 13px; /* Slightly smaller font size */
+  }
+
+  .footer .social-icons a {
+      font-size: 18px; /* Icon size for tablets */
+  }
+
+  .footer-bottom {
+      font-size: 13px; /* Font size for footer bottom */
+  }
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .footer-container {
+      flex-wrap: nowrap; /* Keep sections in one row */
+  }
+
+  .footer-section {
+      min-width: 200px; /* Ensure sections have enough space */
+  }
+
+  .footer-section h3 {
+      font-size: 24px; /* Standard heading size for desktops */
+  }
+
+  .footer-section h4 {
+      font-size: 18px; /* Standard subheading size */
+  }
+
+  .footer-section p,
+  .footer-section ul li a {
+      font-size: 14px; /* Standard font size for desktop */
+  }
+
+  .footer .social-icons a {
+      font-size: 20px; /* Standard icon size for desktops */
+  }
+
+  .footer-bottom {
+      font-size: 14px; /* Standard text size for footer bottom */
+  }
+}

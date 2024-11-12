@@ -1,0 +1,170 @@
+/* General Styles for .business-list */
+.business-list {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.business-list h2 {
+  font-size: 28px;
+  color: #800000; /* Deep red to reflect cultural colors */
+  margin-bottom: 20px;
+}
+
+.business-list p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.business-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.business-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+}
+
+.business-card h3 {
+  font-size: 20px;
+  color: #800000; /* Title color matching theme */
+  margin-bottom: 10px;
+}
+
+.business-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.business-card .btn {
+  display: inline-block;
+  background-color: #FFD700; /* Gold button color */
+  color: #4B2E2E; /* Dark color for contrast */
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.business-card .btn:hover {
+  background-color: #A52A2A; /* Darker shade for hover */
+  color: #fff;
+}
+
+/* Mobile responsiveness (max-width: 768px) */
+@media (max-width: 768px) {
+  .business-list {
+    padding: 20px; /* Reduce padding on mobile */
+  }
+
+  .business-list h2 {
+    font-size: 24px; /* Smaller heading for mobile */
+  }
+
+  .business-list p {
+    font-size: 14px; /* Smaller font for mobile */
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  .business-cards {
+    flex-direction: column; /* Stack the business cards vertically on mobile */
+    align-items: center; /* Center the business cards */
+  }
+
+  .business-card {
+    max-width: 90%; /* Allow business cards to take up more space on mobile */
+    margin-bottom: 20px; /* Add margin between cards */
+  }
+
+  .business-card h3 {
+    font-size: 18px; /* Smaller title on mobile */
+  }
+
+  .business-card p {
+    font-size: 12px; /* Smaller text on mobile */
+  }
+
+  .business-card .btn {
+    font-size: 14px; /* Smaller button font */
+  }
+}
+
+/* Tablet responsiveness (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .business-list {
+    padding: 30px; /* Adjust padding for tablets */
+  }
+
+  .business-list h2 {
+    font-size: 26px; /* Adjust heading for tablet */
+  }
+
+  .business-list p {
+    font-size: 15px; /* Adjust font size for tablet */
+  }
+
+  .business-cards {
+    gap: 15px; /* Reduced gap between cards on tablets */
+  }
+
+  .business-card {
+    max-width: 45%; /* Allow 2 cards per row on tablet */
+  }
+
+  .business-card h3 {
+    font-size: 19px; /* Adjust heading size for tablet */
+  }
+
+  .business-card p {
+    font-size: 13px; /* Adjust text size for tablet */
+  }
+
+  .business-card .btn {
+    font-size: 15px; /* Adjust button font size for tablet */
+  }
+}
+
+/* Desktop responsiveness (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .business-list {
+    padding: 40px; /* Keep original padding for desktop */
+  }
+
+  .business-list h2 {
+    font-size: 28px; /* Heading size for desktop */
+  }
+
+  .business-list p {
+    font-size: 16px; /* Standard font size for desktop */
+  }
+
+  .business-cards {
+    gap: 20px; /* Standard gap between cards */
+  }
+
+  .business-card {
+    max-width: 300px; /* Fixed width for desktop */
+  }
+
+  .business-card h3 {
+    font-size: 20px; /* Standard heading size */
+  }
+
+  .business-card p {
+    font-size: 14px; /* Standard paragraph size */
+  }
+
+  .business-card .btn {
+    font-size: 16px; /* Button font size for desktop */
+  }
+}

@@ -1,0 +1,266 @@
+/* General Styles for .cultural-resources */
+.cultural-resources {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.cultural-resources h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cultural-resources p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Language and Village Section Styles */
+.language-village-section {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #eef2f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-village-section h3 {
+  font-size: 24px;
+  color: #007acc;
+  margin-bottom: 15px;
+}
+
+.language-village-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.language-village-section li {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 5px;
+}
+
+.language-village-section li::marker {
+  color: #007acc;
+}
+
+/* Resource Card Styles */
+.resource-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.resource-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resource-card h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.resource-card p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.resource-card p strong {
+  color: #333;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: #007acc;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #005f99;
+}
+
+.btn img {
+  margin-left: 8px;
+  width: 14px;
+  height: 14px;
+}
+
+/* Table Styles */
+.cultural-resources .data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* Responsive Styles */
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+  .cultural-resources {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .cultural-resources h2 {
+    font-size: 24px; /* Smaller font for heading */
+  }
+
+  .cultural-resources p {
+    font-size: 16px; /* Smaller font for paragraph */
+    margin-bottom: 20px; /* Reduced margin */
+  }
+
+  .language-village-section h3 {
+    font-size: 20px; /* Smaller font size for subheading */
+  }
+
+  .language-village-section ul {
+    padding-left: 15px;
+    max-width: 100%; /* Allow for full width on mobile */
+  }
+
+  .resource-cards {
+    flex-direction: column; /* Stack cards vertically on smaller screens */
+    align-items: center; /* Center align the cards */
+  }
+
+  .resource-card {
+    max-width: 90%; /* Allow resource cards to take up more space */
+    margin-bottom: 20px; /* Space between cards */
+  }
+
+  .resource-card h3 {
+    font-size: 18px; /* Smaller heading for cards */
+  }
+
+  .resource-card p {
+    font-size: 14px; /* Smaller paragraph text */
+  }
+
+  .btn {
+    font-size: 14px; /* Smaller button font */
+  }
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .cultural-resources {
+    padding: 30px; /* Adjust padding for tablets */
+  }
+
+  .cultural-resources h2 {
+    font-size: 28px; /* Medium font size for tablets */
+  }
+
+  .cultural-resources p {
+    font-size: 17px; /* Medium font size for tablets */
+  }
+
+  .resource-cards {
+    gap: 15px; /* Reduce the gap between cards on tablets */
+  }
+
+  .resource-card {
+    max-width: 45%; /* Allow two cards per row on tablets */
+  }
+
+  .resource-card h3 {
+    font-size: 19px; /* Medium heading font size for cards */
+  }
+
+  .resource-card p {
+    font-size: 15px; /* Medium paragraph text */
+  }
+
+  .btn {
+    font-size: 15px; /* Medium button font */
+  }
+}
+
+/* Desktop Styles (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .cultural-resources {
+    padding: 50px; /* Retain original padding for larger screens */
+  }
+
+  .cultural-resources h2 {
+    font-size: 32px; /* Original font size for desktop */
+  }
+
+  .cultural-resources p {
+    font-size: 18px; /* Original font size for paragraphs */
+  }
+
+  .resource-cards {
+    gap: 20px; /* Standard gap between cards */
+  }
+
+  .resource-card {
+    max-width: 300px; /* Fixed width for desktop */
+  }
+
+  .resource-card h3 {
+    font-size: 20px; /* Standard heading size for cards */
+  }
+
+  .resource-card p {
+    font-size: 15px; /* Standard paragraph text size */
+  }
+
+  .btn {
+    font-size: 16px; /* Standard button font size */
+  }
+}
